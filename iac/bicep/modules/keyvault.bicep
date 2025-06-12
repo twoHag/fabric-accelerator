@@ -53,6 +53,10 @@ resource keyvault 'Microsoft.KeyVault/vaults@2023-07-01' ={
         objectId: '9c89e22f-9013-41a5-bc08-58c9ee338fd1' // Used ObjectID for Service Principal. Replace this with your user/group ObjectID
         permissions: {secrets:['list','get','set']}
       }
+      { tenantId: subscription().tenantId
+        objectId: 'fe179f9a-ea90-485d-af59-7cd9622b8996' // Used ObjectID for Personal User. Replace this with your user/group ObjectID
+        permissions: {secrets:['list','get','set']}
+      }
     ]
   }
 }
