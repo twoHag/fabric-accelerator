@@ -17,7 +17,7 @@ param grant_contributor bool = true
 resource storage_account 'Microsoft.Storage/storageAccounts@2023-01-01' existing = {
   name: storage_name
   scope: resourceGroup(storage_rg)
-}/*
+}*/
 
 //In-built role definition for storage account
 @description('This is the built-in Storage Blob Contributor role. See https://docs.microsoft.com/azure/role-based-access-control/built-in-roles')
