@@ -46,6 +46,7 @@ resource keyvault 'Microsoft.KeyVault/vaults@2023-07-01' ={
     }
     enabledForDeployment: true
     enabledForDiskEncryption: true
+    enablePurgeProtection: true
     enabledForTemplateDeployment: true
     // Default Access Policies. Replace the ObjectID's with your user/group id
     accessPolicies:[
