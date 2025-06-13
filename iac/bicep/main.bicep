@@ -3,7 +3,7 @@ targetScope = 'subscription'
 
 // Parameters
 @description('Resource group where Microsoft Fabric capacity will be deployed. Resource group will be created if it doesnt exist')
-param dprg string= 'fabric_capacity'
+param dprg string= 'fabric_capacity01'
 
 @description('Microsoft Fabric Resource group location')
 param rglocation string = 'westeurope'
